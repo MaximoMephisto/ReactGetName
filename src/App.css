@@ -1,9 +1,8 @@
 .App {
-  text-align: center;
+  font-family: 'Bebas Neue', cursive;
 }
-
 .App-logo {
-  height: 40vmin;
+  width: 50px;
   pointer-events: none;
 }
 
@@ -14,14 +13,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: whitesmoke;
+  color: black;
 }
 
 .App-link {
@@ -36,3 +29,37 @@
     transform: rotate(360deg);
   }
 }
+.App-main {
+  margin-top: 150px;
+}
+/********/
+/*Inputs*/
+/********/
+.form-control {
+  border: 0;
+  background-color: transparent;
+  border-bottom: 2px solid black !important;
+  border-radius: 0;
+  outline: none !important;
+}
+input:focus, select:focus, select, input.form-control:focus {
+
+  outline:none !important;
+
+  outline-width: 0 !important;
+
+  box-shadow: none;
+
+  -moz-box-shadow: none;
+
+  -webkit-box-shadow: none;
+
+}
+/*
+Colors
+*/
+.color1 {color: #df7913;}
+.color2 {color: #e3a515;}
+.color3 {color: #efd867;}
+.color4 {color: #f8efba;}
+.color5 {color: #f8efed;}

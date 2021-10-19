@@ -3,13 +3,32 @@ import logo from './logo.svg';
 import './App.css';
 import { useLayoutEffect } from 'react';
 import Formulario from './componentes/Formulario';
+import Navbar from './componentes/Navbar';
+import Carta from './componentes/Carta';
 
 function App() {
 
-  const saludo =
+  const headerContent =
     <>
-      <h1>¡Hola mundo!</h1>
-      <h2>¡Te saludo desde el planeta Marte!</h2>
+      <div className="container">
+        <div className="row">
+          <div className="col-12 col-sm-12 my-5 text-center d-flex justify-content-center">
+            <h1>
+              Welcome to creator card
+            </h1>
+          </div>
+          <div className="col-12 col-sm-12">
+            <h5>
+              Create your letter easily
+            </h5>
+          </div>
+          <div className="col-12 col-sm-12">
+            <h5>
+              With millions of options to configure your layout
+            </h5>
+          </div>
+        </div>
+      </div>
     </>
   ;
   const elemento = 
@@ -32,32 +51,28 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar />
       <header className="App-header">
-        {saludo}
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <p
-          className="prueba"
-          id="prueba"
-        >
-          Esto es un párrafo de prueba.
-        </p>
-        {parrafo}
-        {elemento}
-        
-        //Llamamos el componente Formulario que hemos creado
-        <Formulario />
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-sm-12 my-5">
+              {headerContent}
+            </div>
+          </div>
+        </div>
       </header>
+      <main className="App-main">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-sm-6 mt-5">
+              <Formulario />
+            </div>
+            <div className="col-12 col-sm-6 mt-5">
+              <Carta />
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   );
 }

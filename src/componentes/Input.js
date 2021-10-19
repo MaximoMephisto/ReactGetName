@@ -4,8 +4,7 @@ export default function Input(props) { /* También podriamos utilizar el metodo 
 eliminando los props y utilizar solo los nombres como "etiqueta, tipo, funcion". */
     return (
         <div> 
-            <label>{props.etiqueta}:</label>
-            <input type={props.tipo} onChange={props.funcion} /* onChange de 
+            <input className="form-control" type={props.tipo} onChange={props.funcion} placeholder={props.place} /* onChange de 
             la funcion definida dentro de App.js */ />
         </div>
     );
